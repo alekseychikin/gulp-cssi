@@ -15,7 +15,7 @@ npm install gulp-cssi --save-dev
 
 ```js
 var gulp = require('gulp');
-var cssi = require('./index');
+var cssi = require('gulp-cssi');
 
 gulp.task('default', function ()
 {
