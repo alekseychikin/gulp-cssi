@@ -1,6 +1,6 @@
 {
   "name": "gulp-cssi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "gulp-plugin to include css in one main css file",
   "main": "index.js",
   "scripts": {
@@ -26,11 +26,11 @@
   },
   "homepage": "https://github.com/makingoff/gulp-cssi",
   "dependencies": {
-    "mocha": "^2.2.5"
+    "through2": "^2.0.0",
+    "gulp-util": "^3.0.6"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-util": "^3.0.6",
-    "through2": "^2.0.0"
+    "mocha": "^2.2.5"
   }
 }
