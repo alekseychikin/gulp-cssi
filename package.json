@@ -1,0 +1,36 @@
+{
+  "name": "gulp-cssi",
+  "version": "0.0.1",
+  "description": "gulp-plugin to include css in one main css file",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makingoff/gulp-cssi"
+  },
+  "keywords": [
+    "gulp-plugin",
+    "css",
+    "import"
+  ],
+  "author": {
+    "name": "Aleksei Chikin",
+    "email": "mail@makingoff.name",
+    "site": "makingoff.name"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/makingoff/gulp-cssi/issues"
+  },
+  "homepage": "https://github.com/makingoff/gulp-cssi",
+  "dependencies": {
+    "mocha": "^2.2.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.6",
+    "through2": "^2.0.0"
+  }
+}
