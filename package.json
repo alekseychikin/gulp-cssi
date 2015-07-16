@@ -1,6 +1,6 @@
 {
   "name": "gulp-cssi",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "gulp-plugin to include css in one main css file",
   "main": "index.js",
   "scripts": {

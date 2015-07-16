@@ -37,4 +37,10 @@ Default value is empty string
 
 A string value that is used to make prefix to filenames
 
+#### options.saveEnclosure
+Type: `UInt`
+Default value is `0`
+
+If path of your css-file is `/Applications/MAMP/htdocs/localhost/components/menu/menu.css` and you want to get `import url("menu/menu.css");` then you need one more enclosure. So you set `saveEnclosure: 1`. And you may set `saveEnclosure: 2` to get `components/menu/menu.css` piece of path.
+
 ## license MIT

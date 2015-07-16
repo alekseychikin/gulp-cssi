@@ -14,6 +14,10 @@ module.exports = function (file, opt) {
   if (typeof opt.prefix !== 'string') {
     opt.prefix = '';
   }
+  if (typeof opt.saveEnclosure !== 'number' && typeof opt.saveEnclosure !== 'string') {
+    opt.saveEnclosure = 0;
+  }
+
 
   var firstFile;
   var fileName;
@@ -30,6 +34,8 @@ module.exports = function (file, opt) {
   }
 
   var fileNames = [];
+  var filePath;
+  var filePathTmp;
 
   function bufferContents(file, enc, cb)
   {
@@ -51,7 +57,13 @@ module.exports = function (file, opt) {
       firstFile = file;
     }
 
-    fileNames.push(path.basename(file.path));
+    filePath = '';
+    if (opt.saveEnclosure > 0) {
+      filePathTmp = path.dirname(file.path).split('/');
+      filePath += filePathTmp.splice(filePathTmp.length - opt.saveEnclosure, opt.saveEnclosure).join('/') + '/';
+    }
+    filePath += path.basename(file.path);
+    fileNames.push(filePath);
 
     cb();
   }
